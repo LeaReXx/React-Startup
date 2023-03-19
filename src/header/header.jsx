@@ -32,7 +32,7 @@ export default function Header() {
                   className="text-sm px-1 smooth-trans"
                 />
               </a>
-              <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-[#0e0e0ee7] lg:h-max">
+              <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-[#0e0e0ee7] lg:p-3 lg:rounded lg:h-max">
                 <li className="text-[#ccc] hover:text-[#fff]">
                   <a href="" className="block py-1">
                     About Us
@@ -66,7 +66,7 @@ export default function Header() {
                   className="text-sm px-1 smooth-trans"
                 />
               </a>
-              <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-">
+                            <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-[#0e0e0ee7] lg:p-3 lg:rounded lg:h-max">
                 <li className="text-[#ccc] hover:text-[#fff]">
                   <a href="" className="block py-1">
                     About Us
@@ -100,7 +100,7 @@ export default function Header() {
                   className="text-sm px-1 smooth-trans"
                 />
               </a>
-              <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-">
+              <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-[#0e0e0ee7] lg:p-3 lg:rounded lg:h-max">
                 <li className="text-[#ccc] hover:text-[#fff]">
                   <a href="" className="block py-1">
                     About Us
