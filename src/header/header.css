@@ -1,0 +1,33 @@
+.smooth-trans {
+  transition: all 0.3s;
+}
+
+nav.active {
+  visibility: visible !important;
+  height: max-content !important;
+}
+
+.nav-items:hover > a > .fa-chevron-right {
+  transform: rotate(90deg);
+}
+
+.nav-items:hover > ul {
+  overflow: visible;
+  height: calc(100% + 2px);
+  visibility: visible;
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    height: 100% !important;
+  }
+
+  .nav-items > a > .fa-chevron-right {
+    transform: rotate(90deg);
+  }
+
+  .nav-items:hover > ul {
+    height: auto;
+    color: #0e0e0ee7;
+  }
+}
