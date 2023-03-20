@@ -22,114 +22,102 @@ export default function Header() {
         >
           <ul className="lg:p-0 lg:flex">
             <li className="nav-items py-2 px-3 border-b border-slate-500 lg:border-none">
-              <a
-                href="#"
-                className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center"
-              >
+              <span className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center">
                 Home
                 <FontAwesomeIcon
                   icon="fa-solid fa-chevron-right"
                   className="text-sm px-1 smooth-trans"
                 />
-              </a>
+              </span>
               <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-[#0e0e0ee7] lg:p-3 lg:rounded lg:h-max">
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     Portfolio Details
                   </a>
                 </li>
               </ul>
             </li>
             <li className="nav-items py-2 px-3 border-b border-slate-500 lg:border-none">
-              <a
-                href="#"
-                className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center"
-              >
+              <span className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center">
                 Product
                 <FontAwesomeIcon
                   icon="fa-solid fa-chevron-right"
                   className="text-sm px-1 smooth-trans"
                 />
-              </a>
-                            <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-[#0e0e0ee7] lg:p-3 lg:rounded lg:h-max">
+              </span>
+              <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-[#0e0e0ee7] lg:p-3 lg:rounded lg:h-max">
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     Portfolio Details
                   </a>
                 </li>
               </ul>
             </li>
             <li className="nav-items py-2 px-3 border-b border-slate-500 lg:border-none">
-              <a
-                href="#"
-                className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center"
-              >
+              <span className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center">
                 Pages
                 <FontAwesomeIcon
                   icon="fa-solid fa-chevron-right"
                   className="text-sm px-1 smooth-trans"
                 />
-              </a>
+              </span>
               <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-[#0e0e0ee7] lg:p-3 lg:rounded lg:h-max">
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block py-1">
+                  <a href="" className="block my-2">
                     Portfolio Details
                   </a>
                 </li>
               </ul>
             </li>
             <li className="nav-items py-2 px-3 border-b border-slate-500 lg:border-none">
-              <a
-                href="#"
-                className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center"
-              >
+              <span className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center">
                 About Us
-              </a>
+              </span>
             </li>
           </ul>
         </nav>
