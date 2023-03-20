@@ -17,7 +17,7 @@ export default function Header() {
       : (event.currentTarget.nextElementSibling.style.height = "0px");
   };
   return (
-    <header className="container px-3 lg:pt-5 mx-auto">
+    <header className="container px-3 lg:pt-5 mx-auto max-w-[1330px]">
       <div className="relative py-4 flex justify-between items-center">
         <div>
           <img src="./img/knor-logo.svg" alt="Main logo" />
