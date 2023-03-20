@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./header.css";
+import HeaderMain from "./main/header-main";
 
 export default function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -16,7 +17,7 @@ export default function Header() {
       : (event.currentTarget.nextElementSibling.style.height = "0px");
   };
   return (
-    <header className="container px-3 mx-auto">
+    <header className="container px-3 lg:pt-5 mx-auto">
       <div className="relative py-4 flex justify-between items-center">
         <div>
           <img src="./img/knor-logo.svg" alt="Main logo" />
@@ -121,7 +122,9 @@ export default function Header() {
               </ul>
             </li>
             <li className="px-4">
-              <a href="#" className="py-3 font-medium">About Us</a>
+              <a href="#" className="py-3 font-medium">
+                About Us
+              </a>
             </li>
           </ul>
 
@@ -265,6 +268,7 @@ export default function Header() {
           <FontAwesomeIcon icon="fa-solid fa-bars" />
         </div>
       </div>
+      <HeaderMain />
     </header>
   );
 }
