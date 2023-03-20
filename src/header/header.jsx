@@ -9,115 +9,245 @@ export default function Header() {
     setToggleMenu(!toggleMenu);
   };
 
+  let mobileMenuTreeHandler = (event) => {
+    event.currentTarget.nextElementSibling.style.height === "0px"
+      ? (event.currentTarget.nextElementSibling.style.height =
+          event.currentTarget.nextElementSibling.scrollHeight + "px")
+      : (event.currentTarget.nextElementSibling.style.height = "0px");
+  };
   return (
-    <header className="container px-3  mx-auto">
+    <header className="container px-3 mx-auto">
       <div className="relative py-4 flex justify-between items-center">
         <div>
           <img src="./img/knor-logo.svg" alt="Main logo" />
         </div>
         <nav
-          className={` absolute overflow-hidden invisible top-20 w-full bg-[#0e0e0ee7] text-white lg:text-black shadow-2xl ${
+          className={`absolute overflow-hidden invisible top-20 w-full bg-[#0e0e0ee7] text-white  shadow-2xl ${
             toggleMenu ? "active" : ""
-          } lg:static lg:h-screen lg:visible  lg:shadow-none lg:w-auto lg:bg-inherit`}
+          } lg:bg-inherit lg:shadow-none lg:text-black lg:w-auto lg:static lg:visible lg:overflow-visible`}
         >
-          <ul className="lg:p-0 lg:flex">
-            <li className="nav-items py-2 px-3 border-b border-slate-500 lg:border-none">
-              <span className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center">
+          <ul className="hidden lg:flex lg:w-100 lg:block">
+            <li className="desktop-tree-menu cursor-pointer relative px-5 mx-2">
+              <span href="#" className="py-3 font-medium">
+                Home
+                <FontAwesomeIcon
+                  icon="fa-solid fa-chevron-down"
+                  className="text-sm px-1 text-slate-600"
+                />
+              </span>
+              <ul className="bg-[#0e0e0ee7] absolute top-0 smooth-trans invisible p-2 rounded">
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    About Us
+                  </a>
+                </li>
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    Services
+                  </a>
+                </li>
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    Team
+                  </a>
+                </li>
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    Portfolio Details
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="desktop-tree-menu cursor-pointer relative px-5 mx-2">
+              <span href="#" className="py-3 font-medium">
+                Product
+                <FontAwesomeIcon
+                  icon="fa-solid fa-chevron-down"
+                  className="text-sm px-1 text-slate-600"
+                />
+              </span>
+              <ul className="bg-[#0e0e0ee7] absolute top-0 smooth-trans invisible p-2 rounded">
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    About Us
+                  </a>
+                </li>
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    Services
+                  </a>
+                </li>
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    Team
+                  </a>
+                </li>
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    Portfolio Details
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="desktop-tree-menu cursor-pointer relative px-5 mx-2">
+              <span href="#" className="py-3 font-medium">
+                Pages
+                <FontAwesomeIcon
+                  icon="fa-solid fa-chevron-down"
+                  className="text-sm px-1 text-slate-600"
+                />
+              </span>
+              <ul className="bg-[#0e0e0ee7] absolute top-0 smooth-trans invisible p-2 rounded">
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    About Us
+                  </a>
+                </li>
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    Services
+                  </a>
+                </li>
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    Team
+                  </a>
+                </li>
+                <li className="text-[#ccc] hover:text-[#fff]">
+                  <a href="" className="block mb-2">
+                    Portfolio Details
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="px-4">
+              <a href="#" className="py-3 font-medium">About Us</a>
+            </li>
+          </ul>
+
+          {/* mobile menu  */}
+          <ul className="lg:hidden">
+            <li className="nav-items cursor-pointer py-2 px-3 border-b border-slate-500 ">
+              <span
+                className="py-2 block flex justify-between items-center"
+                onClick={(event) => mobileMenuTreeHandler(event)}
+              >
                 Home
                 <FontAwesomeIcon
                   icon="fa-solid fa-chevron-right"
                   className="text-sm px-1 smooth-trans"
                 />
               </span>
-              <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-[#0e0e0ee7] lg:p-3 lg:rounded lg:h-max">
+              <ul
+                className="overflow-hidden h-0 px-3 smooth-trans"
+                style={{ height: "0px" }}
+              >
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     Portfolio Details
                   </a>
                 </li>
               </ul>
             </li>
-            <li className="nav-items py-2 px-3 border-b border-slate-500 lg:border-none">
-              <span className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center">
+
+            <li className="nav-items cursor-pointer py-2 px-3 border-b border-slate-500 ">
+              <span
+                className="py-2 block  flex justify-between  items-center"
+                onClick={(event) => mobileMenuTreeHandler(event)}
+              >
                 Product
                 <FontAwesomeIcon
                   icon="fa-solid fa-chevron-right"
                   className="text-sm px-1 smooth-trans"
                 />
               </span>
-              <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-[#0e0e0ee7] lg:p-3 lg:rounded lg:h-max">
+              <ul
+                className="overflow-hidden h-0 px-3 smooth-trans"
+                style={{ height: "0px" }}
+              >
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     Portfolio Details
                   </a>
                 </li>
               </ul>
             </li>
-            <li className="nav-items py-2 px-3 border-b border-slate-500 lg:border-none">
-              <span className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center">
+
+            <li className="nav-items cursor-pointer py-2 px-3 border-b border-slate-500 ">
+              <span
+                className="py-2 block  flex justify-between  items-center"
+                onClick={(event) => mobileMenuTreeHandler(event)}
+              >
                 Pages
                 <FontAwesomeIcon
                   icon="fa-solid fa-chevron-right"
                   className="text-sm px-1 smooth-trans"
                 />
               </span>
-              <ul className="overflow-hidden h-0 invisible px-3 lg:absolute lg:bg-[#0e0e0ee7] lg:p-3 lg:rounded lg:h-max">
+              <ul
+                className="overflow-hidden h-0 px-3 smooth-trans"
+                style={{ height: "0px" }}
+              >
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block my-2">
+                  <a href="" className="block mb-2">
                     Portfolio Details
                   </a>
                 </li>
               </ul>
             </li>
-            <li className="nav-items py-2 px-3 border-b border-slate-500 lg:border-none">
-              <span className="py-2 block lg:px-5 flex justify-between lg:justify-center items-center">
+
+            <li className="nav-items cursor-pointer py-2 px-3 border-b border-slate-500 ">
+              <a
+                href=""
+                className="py-2 block  flex justify-between  items-center"
+              >
                 About Us
-              </span>
+              </a>
             </li>
           </ul>
         </nav>

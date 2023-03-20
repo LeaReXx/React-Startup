@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 .smooth-trans {
-  transition: all 0.3s;
+  transition: all 0.2s ease;
 }
 
 nav.active {
@@ -11,23 +15,18 @@ nav.active {
   transform: rotate(90deg);
 }
 
-.nav-items:hover > ul {
-  overflow: visible;
-  height: calc(100% + 2px);
-  visibility: visible;
+.nav-items > ul {
+  transition: all 0.2s;
 }
 
-@media screen and (min-width: 1024px) {
-  nav {
-    height: 100% !important;
-  }
+.desktop-tree-menu > ul {
+  min-width: 150px !important;
+  opacity: 0;
+}
 
-  .nav-items > a > .fa-chevron-right {
-    transform: rotate(90deg);
-  }
-
-  .nav-items:hover > ul {
-    height: auto;
-    color: #0e0e0ee7;
-  }
+.desktop-tree-menu:hover > ul {
+  visibility: visible !important;
+  top: 2rem;
+  opacity: 1;
+  
 }
