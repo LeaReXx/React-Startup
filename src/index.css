@@ -10,3 +10,7 @@
       font-family: 'Be Vietnam Pro',Arial, sans-serif;
     }
   }
+  
+  .smooth-trans {
+    transition: all 0.2s ease;
+  }

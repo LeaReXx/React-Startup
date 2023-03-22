@@ -2,9 +2,7 @@
   box-sizing: border-box;
 }
 
-.smooth-trans {
-  transition: all 0.2s ease;
-}
+
 
 nav.active {
   visibility: visible !important;

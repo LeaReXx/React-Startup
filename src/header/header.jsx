@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./header.css";
 import HeaderMain from "./main/header-main";
@@ -29,7 +29,7 @@ export default function Header() {
         >
           <ul className="hidden lg:flex lg:w-100 lg:block">
             <li className="desktop-tree-menu cursor-pointer relative px-5 mx-2">
-              <span href="#" className="py-3 font-medium">
+              <span href="https://react.dev/" className="py-3 font-medium">
                 Home
                 <FontAwesomeIcon
                   icon="fa-solid fa-chevron-down"
@@ -38,29 +38,29 @@ export default function Header() {
               </span>
               <ul className="bg-[#0e0e0ee7] absolute top-0 smooth-trans invisible p-2 rounded">
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Portfolio Details
                   </a>
                 </li>
               </ul>
             </li>
             <li className="desktop-tree-menu cursor-pointer relative px-5 mx-2">
-              <span href="#" className="py-3 font-medium">
+              <span href="https://react.dev/" className="py-3 font-medium">
                 Product
                 <FontAwesomeIcon
                   icon="fa-solid fa-chevron-down"
@@ -69,29 +69,29 @@ export default function Header() {
               </span>
               <ul className="bg-[#0e0e0ee7] absolute top-0 smooth-trans invisible p-2 rounded">
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Portfolio Details
                   </a>
                 </li>
               </ul>
             </li>
             <li className="desktop-tree-menu cursor-pointer relative px-5 mx-2">
-              <span href="#" className="py-3 font-medium">
+              <span href="https://react.dev/" className="py-3 font-medium">
                 Pages
                 <FontAwesomeIcon
                   icon="fa-solid fa-chevron-down"
@@ -100,29 +100,29 @@ export default function Header() {
               </span>
               <ul className="bg-[#0e0e0ee7] absolute top-0 smooth-trans invisible p-2 rounded">
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Portfolio Details
                   </a>
                 </li>
               </ul>
             </li>
             <li className="px-4">
-              <a href="#" className="py-3 font-medium">
+              <a href="https://react.dev/" className="py-3 font-medium">
                 About Us
               </a>
             </li>
@@ -146,22 +146,22 @@ export default function Header() {
                 style={{ height: "0px" }}
               >
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Portfolio Details
                   </a>
                 </li>
@@ -184,22 +184,22 @@ export default function Header() {
                 style={{ height: "0px" }}
               >
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Portfolio Details
                   </a>
                 </li>
@@ -222,22 +222,22 @@ export default function Header() {
                 style={{ height: "0px" }}
               >
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     About Us
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Services
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Team
                   </a>
                 </li>
                 <li className="text-[#ccc] hover:text-[#fff]">
-                  <a href="" className="block mb-2">
+                  <a href="https://react.dev/" className="block mb-2">
                     Portfolio Details
                   </a>
                 </li>
@@ -246,7 +246,7 @@ export default function Header() {
 
             <li className="nav-items cursor-pointer py-2 px-3 border-b border-slate-500 ">
               <a
-                href=""
+                href="https://react.dev/"
                 className="py-2 block  flex justify-between  items-center"
               >
                 About Us
@@ -255,7 +255,7 @@ export default function Header() {
           </ul>
         </nav>
         <div className="hidden lg:block">
-          <a href="">
+          <a href="https://react.dev/">
             <button className="bg-[#1C2639] text-white py-2 px-5 rounded smooth-trans hover:bg-[#3BCBB0]">
               Sign Up
             </button>
