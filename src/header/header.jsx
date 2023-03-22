@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./header.css";
 import HeaderMain from "./main/header-main";
@@ -10,6 +10,13 @@ export default function Header() {
     setToggleMenu(!toggleMenu);
   };
 
+  // close all mobile menu child when menu toggle
+  useEffect(() => {
+    let mobileMenuChild = document.querySelectorAll(".nav-items > ul");
+    for (let mobileItem of mobileMenuChild) {
+      mobileItem.style.height = "0px";
+    }
+  }, [toggleMenu]);
   let mobileMenuTreeHandler = (event) => {
     event.currentTarget.nextElementSibling.style.height === "0px"
       ? (event.currentTarget.nextElementSibling.style.height =
