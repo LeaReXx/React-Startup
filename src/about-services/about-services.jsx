@@ -20,15 +20,12 @@ export default function AboutServices() {
           centeredSlidesVertically={true}
           loop={true}
           breakpoints={{
-            // when window width is >= 640px
             420: {
               slidesPerView: 2,
             },
-            // when window width is >= 768px
             600: {
               slidesPerView: 3,
             },
-
             992: {
               slidesPerView: 4,
             },
