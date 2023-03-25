@@ -100,7 +100,7 @@ export default function AboutServices() {
           {customersBrand.map((brand) => {
             return (
               <SwiperSlide key={brand.id}>
-                <div className="max-w-[180px] h-[210px] flex items-center grayscale opacity-60 hover:opacity-100 hover:grayscale-0 smooth-trans mx-auto">
+                <div className="max-w-[180px] h-[150px] my-16 flex items-center grayscale opacity-60 hover:opacity-100 hover:grayscale-0 smooth-trans mx-auto">
                   <img src={brand.img} alt={brand.title} className="w-full" />
                 </div>
               </SwiperSlide>
