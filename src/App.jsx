@@ -4,6 +4,7 @@ import Header from "./header/header";
 import AboutInvesting from "./about-investing/about-investing";
 import MakeMoney from "./make-money/make-money";
 import BusinessGrowth from "./business-growth/business-growth";
+import TeamTogether from "./team-together/team-together";
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
       <AboutInvesting />
       <MakeMoney />
       <BusinessGrowth />
+      <TeamTogether />
     </div>
   );
 }
