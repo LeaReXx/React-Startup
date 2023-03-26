@@ -5,6 +5,7 @@ import AboutInvesting from "./about-investing/about-investing";
 import MakeMoney from "./make-money/make-money";
 import BusinessGrowth from "./business-growth/business-growth";
 import TeamTogether from "./team-together/team-together";
+import QuestionAnswer from "./question-answer/question-answer";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <MakeMoney />
       <BusinessGrowth />
       <TeamTogether />
+      <QuestionAnswer />
     </div>
   );
 }

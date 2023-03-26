@@ -14,3 +14,7 @@
   .smooth-trans {
     transition: all 0.2s ease;
   }
+
+  .w-5 {
+    width: 22px;
+  }
