@@ -11,7 +11,7 @@ export default function HeaderMain() {
           Build Amazing Startup Business Together
         </h1>
 
-        <p className="font-normal text-lg py-1 lg:py-3">
+        <p className="font-normal text-lg py-1 lg:py-3 text-[#555555]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio delectus
           eligendi totam culpa. Hic laboriosam, quis libero cumque iure
           assumenda.
