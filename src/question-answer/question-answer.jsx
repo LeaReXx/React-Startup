@@ -105,11 +105,11 @@ export default function QuestionAnswer() {
           <div>
             <Fragment>
               <Accordion
-                open={open2 === 1}
+                open={open2 === 5}
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian2(1)}
+                  onClick={() => handleAccordian2(5)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   How many actual users do you have?
@@ -122,11 +122,11 @@ export default function QuestionAnswer() {
                 </AccordionBody>
               </Accordion>
               <Accordion
-                open={open2 === 2}
+                open={open2 === 6}
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian2(2)}
+                  onClick={() => handleAccordian2(6)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   Has growth been linear and consistent?
@@ -139,11 +139,11 @@ export default function QuestionAnswer() {
                 </AccordionBody>
               </Accordion>
               <Accordion
-                open={open2 === 3}
+                open={open2 === 7}
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian2(3)}
+                  onClick={() => handleAccordian2(7)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   What is unique about the company?
@@ -156,11 +156,11 @@ export default function QuestionAnswer() {
                 </AccordionBody>
               </Accordion>
               <Accordion
-                open={open2 === 4}
+                open={open2 === 8}
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian2(4)}
+                  onClick={() => handleAccordian2(8)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   How will these funds be allocated?
