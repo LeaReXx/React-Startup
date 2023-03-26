@@ -14,7 +14,7 @@ export default function QuestionAnswer() {
   };
 
   const handleAccordion2 = (value) => {
-    setOpen2(open === value ? 0 : value);
+    setOpen2(open2 === value ? 0 : value);
   };
   return (
     <section className="bg-[#1C263905] py-14 my-10 lg:my-4 lg:py-20">
