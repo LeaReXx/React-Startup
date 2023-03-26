@@ -8,12 +8,12 @@ import {
 
 export default function QuestionAnswer() {
   const [open, setOpen] = useState(1);
-  const [open2, setOpen2] = useState(1);
-  const handleAccordian1 = (value) => {
+  const [open2, setOpen2] = useState(5);
+  const handleAccordion1 = (value) => {
     setOpen(open === value ? 0 : value);
   };
 
-  const handleAccordian2 = (value) => {
+  const handleAccordion2 = (value) => {
     setOpen2(open === value ? 0 : value);
   };
   return (
@@ -37,7 +37,7 @@ export default function QuestionAnswer() {
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian1(1)}
+                  onClick={() => handleAccordion1(1)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   Can I invest in without putting in money?
@@ -54,7 +54,7 @@ export default function QuestionAnswer() {
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian1(2)}
+                  onClick={() => handleAccordion1(2)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   How can approach a startup investment?
@@ -71,7 +71,7 @@ export default function QuestionAnswer() {
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian1(3)}
+                  onClick={() => handleAccordion1(3)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   What unique features are you working on?
@@ -88,7 +88,7 @@ export default function QuestionAnswer() {
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian1(4)}
+                  onClick={() => handleAccordion1(4)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   How will scaling impact profit margins?
@@ -109,7 +109,7 @@ export default function QuestionAnswer() {
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian2(5)}
+                  onClick={() => handleAccordion2(5)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   How many actual users do you have?
@@ -126,7 +126,7 @@ export default function QuestionAnswer() {
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian2(6)}
+                  onClick={() => handleAccordion2(6)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   Has growth been linear and consistent?
@@ -143,7 +143,7 @@ export default function QuestionAnswer() {
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian2(7)}
+                  onClick={() => handleAccordion2(7)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   What is unique about the company?
@@ -160,7 +160,7 @@ export default function QuestionAnswer() {
                 className="my-5 bg-[#fff] border rounded-[20px] px-4 py-2"
               >
                 <AccordionHeader
-                  onClick={() => handleAccordian2(8)}
+                  onClick={() => handleAccordion2(8)}
                   className="border-none flex flex-row-reverse justify-end gap-2 text-2xl font-medium text-left"
                 >
                   How will these funds be allocated?
