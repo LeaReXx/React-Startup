@@ -6,6 +6,7 @@ import MakeMoney from "./make-money/make-money";
 import BusinessGrowth from "./business-growth/business-growth";
 import TeamTogether from "./team-together/team-together";
 import QuestionAnswer from "./question-answer/question-answer";
+import Subscribe from "./subscribe/subscribe";
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
       <BusinessGrowth />
       <TeamTogether />
       <QuestionAnswer />
+      <Subscribe />
     </div>
   );
 }
