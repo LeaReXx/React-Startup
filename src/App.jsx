@@ -7,6 +7,7 @@ import BusinessGrowth from "./business-growth/business-growth";
 import TeamTogether from "./team-together/team-together";
 import QuestionAnswer from "./question-answer/question-answer";
 import Subscribe from "./subscribe/subscribe";
+import Footer from "./footer/footer";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
       <TeamTogether />
       <QuestionAnswer />
       <Subscribe />
+      <Footer />
     </div>
   );
 }

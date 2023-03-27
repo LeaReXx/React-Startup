@@ -13,7 +13,7 @@ export default function MakeMoney() {
           kinds of investment.
         </p>
         <div className="text-center my-3 md:text-left">
-          <button class="bg-[#1C2639] text-white py-4 rounded-xl font-medium md:px-8 smooth-trans hover:bg-[#3BCBB0] w-full md:w-auto lg:rounded">
+          <button className="bg-[#1C2639] text-white py-4 rounded-xl font-medium md:px-8 smooth-trans hover:bg-[#3BCBB0] w-full md:w-auto lg:rounded">
             Our Services
           </button>
         </div>
